@@ -3,7 +3,7 @@ let mysql = require('mysql')
 let connection = mysql.createConnection({
     host: 'localhost',
     user: 'admin',
-    password: 'password',
+    password: '123',
     database : 'Todo-List-Dummy-API'
 })
 
