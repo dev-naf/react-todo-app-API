@@ -6,6 +6,6 @@ const todoSchema = new mongoose.Schema({ // Stuktur Schema
     STATUS: Boolean,
 });
 
-const todoModel = mongoose.model('Todo', todoSchema); // Declare model.  
+const todoModel = mongoose.model('todo_data', todoSchema); // Declare model.  
 
 module.exports = todoModel;
