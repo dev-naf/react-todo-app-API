@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const route = require('./routes/todo-routes')
+const mongoose = require('./config/mongoose')
 
 const app = express()
 const port = 3001
