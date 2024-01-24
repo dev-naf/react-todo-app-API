@@ -1,10 +1,9 @@
-var connection = require("../config/database");
 const DbModel = require("../model/todoModel");
 
 const allTodo = async (req, res) => {
   try {
     const newData = await DbModel.find();
-    res.status(200).json(newData);
+    await res.status(200).json({newData});
   } catch (error) {
     res.status(500).json({ error });
   }
